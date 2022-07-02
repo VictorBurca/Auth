@@ -4,8 +4,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using System;
 using WebApi.Entities;
 
-[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
-public class AuthorizeAttribute : Attribute, IAuthorizationFilter
+public class CustomAuthorizeAttribute : Attribute, IAuthorizationFilter
 {
     public void OnAuthorization(AuthorizationFilterContext context)
     {

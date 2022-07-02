@@ -26,7 +26,7 @@ namespace WebApi.Controllers
             return Ok(response);
         }
 
-        [Authorize]
+        [CustomAuthorize]
         [HttpGet]
         public IActionResult GetAll()
         {
